@@ -34,7 +34,6 @@ public class GuestbookServiceImpl implements GuestbookService{
 	public int deleteGuestbook(Long id, String ip) {
 		int deleteCount = guestbookDao.deleteById(id);
 		Log log = new Log();
-		log.setId(id);
 		log.setIp(ip);
 		log.setMethod("delete");
 		log.setRegdate(new Date());
@@ -48,9 +47,8 @@ public class GuestbookServiceImpl implements GuestbookService{
 		guestbook.setRegdate(new Date());
 		Long id = guestbookDao.insert(guestbook);
 		guestbook.setId(id);
-		
+			
 		Log log = new Log();
-		log.setId(id);
 		log.setIp(ip);
 		log.setMethod("insert");
 		log.setRegdate(new Date());
