@@ -1,4 +1,4 @@
-package kr.or.young.gestbook.config;
+package kr.or.young.guestbook.config;
 
 import javax.sql.DataSource;
 

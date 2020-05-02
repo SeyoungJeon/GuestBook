@@ -1,4 +1,4 @@
-package kr.or.young.gestbook.config;
+package kr.or.young.guestbook.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "kr.or.young.guestbook.controller" })
+@ComponentScan(basePackages = {"kr.or.young.gestbook.controller"})
 public class WebMvcContextConfiguration extends WebMvcConfigurerAdapter {
 	// DispachterServlet이 읽어들이는 것
 	
@@ -37,7 +37,7 @@ public class WebMvcContextConfiguration extends WebMvcConfigurerAdapter {
     		System.out.println("addViewControllers가 호출됩니다. ");
         registry.addViewController("/").setViewName("index");
     }
-    
+
     // View의 이름을 가지고 어떤 View의 정보인지 찾게 하는 함수
     @Bean
     public InternalResourceViewResolver getInternalResourceViewResolver() {
