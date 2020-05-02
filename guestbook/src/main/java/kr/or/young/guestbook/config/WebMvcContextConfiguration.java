@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"kr.or.young.gestbook.controller"})
+@ComponentScan(basePackages = {"kr.or.young.guestbook.controller"})
 public class WebMvcContextConfiguration extends WebMvcConfigurerAdapter {
 	// DispachterServlet이 읽어들이는 것
 	
