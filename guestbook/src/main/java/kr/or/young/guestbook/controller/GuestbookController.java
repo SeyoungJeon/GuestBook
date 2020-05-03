@@ -92,5 +92,4 @@ public class GuestbookController {
 			return "redirect:list";
 		}
 	}
-	
 }
